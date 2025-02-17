@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Survey Questions</title>
+        <h1>get application questions</h1>
+    </head>
+    <body>
+        <div>
+            <form action="{{ url_for('result') }}" method="POST" >
+                <label for="url">URL:</label>
+                <input type="url" id="url" name="url" placeholder="URL">
+                <button type="submit">submit</button>
+            </form>
+        </div>
+    </body>
+</html>

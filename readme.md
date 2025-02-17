@@ -1,0 +1,1 @@
+i was too lazy to copy and paste questions from an application form so i just made a program that would do it for me
