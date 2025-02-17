@@ -4,14 +4,30 @@
     <head>
         <title>Survey Questions</title>
         <h1>get application questions</h1>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            h1 {
+                text-align: center;
+            }
+            div {
+                max-width: fit-content;
+                margin: auto;
+            }
+            button, input, label {
+                font-size: 40px;
+                margin: auto;
+            }
+        </style>
+
     </head>
     <body>
         <div>
             <form action="{{ url_for('result') }}" method="POST" >
                 <label for="url">URL:</label>
-                <input type="url" id="url" name="url" placeholder="URL">
+                <input type="url" id="url" name="url" placeholder="URL"><br>
                 <button type="submit">submit</button>
             </form>
         </div>
+
     </body>
 </html>
