@@ -20,9 +20,7 @@ def find_q(url) -> list:
     for label in labels:
         lab = label.find('label')
         lab2 = lab.text
-        tag = soup.new_tag('p')
-        tag.string = lab2[1:]
-        res.append(tag)
+        res.append(lab2)
     return res
 
 @app.route('/')
@@ -38,7 +36,7 @@ def result():
         # with open(file_path, "w", encoding='utf-8') as file:
         #     for line in res:
         #         file.write(line)
-        new = BeautifulSoup("", "html.parser")
+        new = BeautifulSoup("<!DOCTYPE html><html><head><h1>Here are the questions for you to copy and paste:</h1><head><body></body><html>", "html.parser")
         for line in res:
             lein = new.new_tag('p')
             lein.string = line
